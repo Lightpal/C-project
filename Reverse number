@@ -8,9 +8,9 @@ cin>>n;
 int reverse;
 
 while(n>0){
-    int lastdigit = n%10;
-    reverse = reverse * 10 + lastdigit;
-    n = n/10;
+    int lastdigit = n%10;                //  This calculates the lastdigit of 'n' using the modulus operator.
+    reverse = reverse * 10 + lastdigit; //   This shifts the current digits of 'reverse' one place to the left (by multiplying 10) and adds the last digit of 'n' to it.
+    n = n/10;                          //    This removes the last digit from 'n' by performing integer divison by 10.
 } 
 cout<<reverse<<endl;
     return 0;
