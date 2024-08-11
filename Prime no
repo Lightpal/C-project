@@ -21,9 +21,16 @@ for(int i=2;i<=sqrt(n);i++){
         break;
     }
 }
+
+//  The program uses a for loop to check for divisors of n from 2 to sqrt(n).
+If n is divisible by any number i in this range, it means n is not a prime number. The program sets the flag to true, prints "Non-prime", and exits the loop using break.
+
+
     if(!flag){
         cout<<"Prime"<<endl;
     }
 
     return 0;
 }
+
+//  After the loop, if flag is still false, it means no divisors were found, and therefore, n is a prime number. The program prints "prime".
