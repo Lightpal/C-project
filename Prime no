@@ -1,36 +1,29 @@
+// Online C++ compiler to run C++ program online
 #include <iostream>
-#include <cmath>
 using namespace std;
 
 int main() {
-    
     int n;
+    cout<<"Enter no :";
     cin>>n;
     
-if(n<=1){
-    cout<<"Non-prime"<<endl;
-    return 0;
-}
-
-bool flag = false;
-
-for(int i=2;i<=sqrt(n);i++){
-    if(n%i==0){
+    if(n<=1){
         cout<<"Non-prime"<<endl;
-        flag = true;
-        break;
+        return 0;
     }
-}
-
-//  The program uses a for loop to check for divisors of n from 2 to sqrt(n).
-If n is divisible by any number i in this range, it means n is not a prime number. The program sets the flag to true, prints "Non-prime", and exits the loop using break.
-
-
+    
+    bool flag = false;
+    
+    for(int i=2;i<=n-1;i++){
+        if(n%i==0){
+            cout<<"Non-Prime"<<endl;
+            flag = true;
+            break;
+        }
+    
+    }
     if(!flag){
         cout<<"Prime"<<endl;
     }
-
     return 0;
 }
-
-//  After the loop, if flag is still false, it means no divisors were found, and therefore, n is a prime number. The program prints "prime".
