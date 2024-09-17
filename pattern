@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Loop for each row
+    for (int i=0;i<5;i++) {
+        // Loop for each column
+        for (int j=0;j<=i;j++) {
+            // Print the character corresponding to 'A' + i
+            cout << char('A' + i);
+        }
+        cout << endl; // Move to the next line after each row
+    }
+    
+    return 0;
+}
+
+// OUTPUT 
+A
+BB
+CCC
+DDDD
+EEEEE
